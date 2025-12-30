@@ -9,7 +9,14 @@
 
 <body>
 
-    <h1 id="myid"></h1>
+
+
+
+
+
+
+
+    <!-- <h1 id="myid"></h1> -->
 
 
 
@@ -31,11 +38,33 @@
 </body>
 <script>
 
-    function MyFunction(x, y) {
-        return x + y;
+    var person = {
+        name : "Iman",
+        family : "Madaeny",
+        age : "30",
+        fullname : function (){
+            return this.name + " " + this.family;
+        }
     }
 
-    document.getElementById("myid").innerHTML = MyFunction( 5, 5 );
+    console.log(person.fullname());
+
+
+
+
+
+
+
+
+
+
+
+
+    // function MyFunction(x, y) {
+    //     return x + y;
+    // }
+
+    // document.getElementById("myid").innerHTML = MyFunction( 5, 5 );
 
 
 

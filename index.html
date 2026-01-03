@@ -10,7 +10,7 @@
 <body>
 
 
-
+    <p id="result"></p>
 
 
 
@@ -35,8 +35,52 @@
 </body>
 <script>
 
+    var names = ["iman", "ali", "reza", "sara", "neda"];
+
+    var element = document.getElementById("result");
+
+    var text ="";
+
+    for (var i = 0; i < names.length; i++){
+        text += names[i] + "<br/>";
+    }
+    
+    element.innerHTML = text;
 
 
+
+
+    // switch (new Date().getDay()) {
+    //     case 0: {
+    //         alert("sunday");
+    //         break;
+    //     };
+    // case 1: {
+    //     alert("monday");
+    //     break;
+    // };
+    // case 2: {
+    //     alert("tuesday");
+    //     break;
+    // };
+    // case 3: {
+    //     alert("wednesday");
+    //     break;
+    // };
+    // case 4: {
+    //     alert("thursday");
+    //     break;
+    // };
+    // case 5: {
+    //     alert("friday");
+    //     break;
+    // };
+    // case 6: {
+    //     alert("saturday");
+    //     break;
+    // };
+
+    // }
 
 
 

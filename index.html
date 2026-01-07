@@ -9,9 +9,25 @@
 
 <body>
 
+    <p>please input a number between 1 and 10 :</p>
+    <input type="number" id="numInput" min="1" max="10" />
+    <button onclick="checkNumber()">Submit</button>
+    <p id="result"></p>
+    <script>
+        function checkNumber() {
+            var num = document.getElementById("numInput").value;
+            if (num < 1 || num > 10) {
+                // alert("error");
+                document.getElementById("result").innerText = "The number is out of range. Please enter a number between 1 and 10."; 
+                throw new Error("The number is out of range. Please enter a number between 1 and 10.");
+            } else {
+                alert("Thank you for entering a valid number: " + num);
+            }
+        }
+    </script>
+
 
     <!-- <p id="result"></p> -->
-
 
 
 
@@ -37,11 +53,32 @@
 
 
 
-// var i = 1;
-// while (i <= 20) {
-//     console.log(i);
-//     i++;
+
+
+// try{
+//     addImanMadaeny("Iman Madaeny")
 // }
+// catch(err){
+// document.getElementById("result").innerHTML = err.message;
+// }
+// finally{
+
+
+// }
+// function addImanMadaeny(name){
+//     alert("name");
+// }
+
+
+
+
+
+
+    // var i = 1;
+    // while (i <= 20) {
+    //     console.log(i);
+    //     i++;
+    // }
 
 
     // var names = ["iman", "ali", "reza", "sara", "neda"];
@@ -53,7 +90,7 @@
     // for (var i = 0; i < names.length; i++){
     //     text += names[i] + "<br/>";
     // }
-    
+
     // element.innerHTML = text;
 
 
